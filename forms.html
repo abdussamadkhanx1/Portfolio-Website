@@ -3,95 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>University Sign-Up</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Sign Up Form </title>
     <style>
-        body {
-    font-family: Arial, sans-serif;
+        /* Reset default margin and padding */
+body, h1, p {
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    width: 300px;
-    margin: 0 auto;
+/* Apply a background image to the body */
+body {
+    background-image: url('Images/University_of_Peshawar.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Center the form and its contents */
+form {
     text-align: center;
+    margin: 100px auto;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the form elements */
+input[type="text"],
+input[type="password"],
+input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-bottom: 10px;
-}
-
-label {
-    font-weight: bold;
-}
-
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button {
+input[type="button"] {
     background-color: #007BFF;
     color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
+    font-weight: bold;
     cursor: pointer;
 }
 
-button:hover {
+input[type="button"]:hover {
     background-color: #0056b3;
+}
+
+/* Center the image */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Style the h1 element */
+h1 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Style the checkbox label */
+label {
+    font-size: 14px;
+}
+
+/* Center the checkbox and checkbox label */
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Center the Create Account button */
+input[type="button"] {
+    display: block;
+    margin: 0 auto;
 }
 
     </style>
 </head>
-<body>
-    <div class="container">
-        <h2>University Sign-Up</h2>
-        <form action="process.php" method="POST">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm_password" required>
-            </div>
-            <div class="form-group">
-                <label for="program">Program:</label>
-                <select id="program" name="program">
-                    <option value="computer-science">Computer Science</option>
-                    <option value="engineering">Engineering</option>
-                    <option value="business">Business</option>
-                    <!-- Add more options as needed -->
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="graduation-year">Graduation Year:</label>
-                <input type="number" id="graduation-year" name="graduation_year">
-            </div>
-            <div class="form-group">
-                <button type="submit">Sign Up</button>
-            </div>
-        </form>
-    </div>
+
+<body background="Images/University_of_Peshawar.jpg" >
+    
+    
+    <form action="">
+        <center>
+        <img src="Images/University_of_Peshawar_logo.png" alt=""> <br>
+        <h1><center>Sign up</center></h1>
+        <br>
+        <input type="text" placeholder="Email/Contact/CNIC Or Any Unique Username here"> 
+        <br> <br>
+        <input type="text" placeholder="Name here">
+        <br> <br>
+        <input type="password" placeholder="Password here">
+        <br> <br>
+        <input type="password" placeholder="Confrim Password">
+        <br> <br>
+        <input type="checkbox" name="">Accept our Tems and Condition
+        <br> <br>
+        <input type="button" value="Create Account">
+        <label for="">Already Account</label>
+        <a href="Sign in">Sign in</a>
+        </center>
+
+    </form>
+
 </body>
 </html>
